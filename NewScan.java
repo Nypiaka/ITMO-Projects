@@ -1,5 +1,3 @@
-package game;//package com.company;
-
 import java.io.*;
 
 public class NewScan implements AutoCloseable {
