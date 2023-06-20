@@ -1,0 +1,25 @@
+Analysing file ru_RU_only_money.txt
+Common statistics
+    Number of sentences: 1.
+    Number of words: 0.
+    Number of numbers: 0.
+    Number of amounts: 10.
+    Number of date: 0.
+Statistics by sentences
+    Number of sentences: 1 (1 various).
+    Minimum sentence: " 900,00 ₽                      200,00 ₽               400,00 ₽                                   1000,00 ₽                    500,00 ₽                              300,00 ₽                     700,00 ₽                                                                        600,00 ₽                       800,00 ₽                                                      100,00 ₽".
+    Maximum sentence: " 900,00 ₽                      200,00 ₽               400,00 ₽                                   1000,00 ₽                    500,00 ₽                              300,00 ₽                     700,00 ₽                                                                        600,00 ₽                       800,00 ₽                                                      100,00 ₽".
+    Minimum length of sentence: 374 (" 900,00 ₽                      200,00 ₽               400,00 ₽                                   1000,00 ₽                    500,00 ₽                              300,00 ₽                     700,00 ₽                                                                        600,00 ₽                       800,00 ₽                                                      100,00 ₽").
+    Maximum length of sentence: 374 (" 900,00 ₽                      200,00 ₽               400,00 ₽                                   1000,00 ₽                    500,00 ₽                              300,00 ₽                     700,00 ₽                                                                        600,00 ₽                       800,00 ₽                                                      100,00 ₽").
+    Average length of sentence: 374.
+Statistics by words
+    Not found
+Statistics by number
+    Not found
+Statistics by amounts
+    Number of amounts: 10 (10 various).
+    Minimum amount: 100.
+    Maximum amount: 1,000.
+    Average amount: 550.
+Statistics by date
+    Not found

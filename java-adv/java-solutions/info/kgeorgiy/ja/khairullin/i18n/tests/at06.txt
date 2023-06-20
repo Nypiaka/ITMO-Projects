@@ -1,0 +1,36 @@
+Анализируемый файл en_US_hodgePodge.txt
+Сводная статистика
+    Число предложений: 31.
+    Число слов: 378.
+    Число чисел: 4.
+    Число сумм: 10.
+    Число дат: 4.
+Статистика по предложениям
+    Число предложений: 31 (31 различных).
+    Минимальное предложение: "A light bulb burns from one hundred and twenty bricks, because the structure, so to speak, is like a brick. ".
+    Максимальное предложение: "You can become an air planet. $200.00 And you will be sure that this planet will be accepted according to the textbook. ".
+    Минимальная длина предложения: 23 ("That's real diplomacy! ").
+    Максимальная длина предложения: 219 ("And on Herzen Street there will be a split textbook. $500.00 Then the textbook will pass through Herzen Street, through grocery store number twenty-two, and be replaced there according to the formula of economic unity. ").
+    Средняя длина предложения: 75,032.
+Статистика по словам
+    Число слов: 378 (168 различных).
+    Минимальное слово: "a".
+    Максимальное слово: "You".
+    Минимальная длина слова: 1 ("A").
+    Максимальная длина слова: 13 ("Te-le-fun-ken").
+    Средняя длина слова: "4,487".
+Статистика по числам
+    Число чисел: 4 (4 различных).
+    Минимальное число: 1.
+    Максимальное число: 4.
+    Среднее число: 2,5.
+Статистика по суммам денег
+    Число сумм: 10 (10 различных).
+    Минимальная сумма: 100.
+    Максимальная сумма: 1 000.
+    Средняя сумма: 550.
+Статистика по датам
+    Число дат: 4 (4 различных).
+    Минимальная дата: 1 февр. 2003 г..
+    Максимальная дата: 1 февр. 2007 г..
+    Средняя дата: 31 янв. 2005 г..

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Nypiaka
+Main-Class: info.kgeorgiy.ja.khairullin.implementor.Implementor
+Class-Path: ../../java-advanced-2023/artifacts/info.kgeorgiy.java.advanced.implementor.jar

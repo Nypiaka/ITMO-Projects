@@ -1,0 +1,27 @@
+Analysing file ru_RU_only_text.txt
+Common statistics
+    Number of sentences: 36.
+    Number of words: 284.
+    Number of numbers: 0.
+    Number of amounts: 0.
+    Number of date: 0.
+Statistics by sentences
+    Number of sentences: 36 (36 various).
+    Minimum sentence: "А Илья Муромец даёт колебания только на семью на свою. ".
+    Maximum sentence: "Это, так сказать, система... э-э-э... в составе ста двадцати единиц. ".
+    Minimum length of sentence: 22 ("В народе - колхозник. ").
+    Maximum length of sentence: 140 ("Тогда учебник будет проходить через улицу Герцена, через гастроном номер двадцать два, и замещаться там по формуле экономического единства. ").
+    Average length of sentence: 56.139.
+Statistics by words
+    Number of words: 284 (170 various).
+    Minimum word: "А".
+    Maximum word: "э-э-э".
+    Minimum length of word: 1 ("в").
+    Maximum length of word: 16 ("сфотографировать").
+    Average length of word: "5.739".
+Statistics by number
+    Not found
+Statistics by amounts
+    Not found
+Statistics by date
+    Not found

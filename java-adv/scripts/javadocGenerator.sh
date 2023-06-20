@@ -1,0 +1,2 @@
+cd ..
+javadoc -link https://docs.oracle.com/en/java/javase/20/docs/api/ -d javadoc -private -cp ../java-advanced-2023/artifacts/info.kgeorgiy.java.advanced.implementor.jar ./java-solutions/info/kgeorgiy/ja/khairullin/implementor/Implementor.java

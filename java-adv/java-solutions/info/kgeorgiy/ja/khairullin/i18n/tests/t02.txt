@@ -1,0 +1,25 @@
+Analysing file ru_RU_only_dates.txt
+Common statistics
+    Number of sentences: 1.
+    Number of words: 0.
+    Number of numbers: 0.
+    Number of amounts: 0.
+    Number of date: 4.
+Statistics by sentences
+    Number of sentences: 1 (1 various).
+    Minimum sentence: "01.02.2003                        01 февр. 2004 г.                                                                       01 февраля 2006 г.                                                     01.02.2007".
+    Maximum sentence: "01.02.2003                        01 февр. 2004 г.                                                                       01 февраля 2006 г.                                                     01.02.2007".
+    Minimum length of sentence: 202 ("01.02.2003                        01 февр. 2004 г.                                                                       01 февраля 2006 г.                                                     01.02.2007").
+    Maximum length of sentence: 202 ("01.02.2003                        01 февр. 2004 г.                                                                       01 февраля 2006 г.                                                     01.02.2007").
+    Average length of sentence: 202.
+Statistics by words
+    Not found
+Statistics by number
+    Not found
+Statistics by amounts
+    Not found
+Statistics by date
+    Number of date: 4 (4 various).
+    Minimum date: Feb 1, 2003.
+    Maximum date: Feb 1, 2007.
+    Average date: Jan 31, 2005.

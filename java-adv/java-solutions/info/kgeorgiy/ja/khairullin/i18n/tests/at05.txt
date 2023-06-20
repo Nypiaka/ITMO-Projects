@@ -1,0 +1,36 @@
+Analysing file ru_RU_hodgePodge.txt
+Common statistics
+    Number of sentences: 32.
+    Number of words: 283.
+    Number of numbers: 4.
+    Number of amounts: 10.
+    Number of date: 4.
+Statistics by sentences
+    Number of sentences: 32 (32 various).
+    Minimum sentence: "А крепкий учебник будет весомее, чем гастроном на улице Герцена. ".
+    Maximum sentence: "даёт свои 3 колебания на всю дипломатию. 700,00 ₽ А Илья Муромец даёт колебания только на семью на свою. ".
+    Minimum length of sentence: 22 ("В народе - колхозник. ").
+    Maximum length of sentence: 196 ("А на улице Герцена будет расщеплённый учебник. 500,00 ₽ Тогда учебник будет проходить через улицу Герцена, через гастроном номер двадцать два, и замещаться там по формуле экономического единства. ").
+    Average length of sentence: 68.125.
+Statistics by words
+    Number of words: 283 (170 various).
+    Minimum word: "А".
+    Maximum word: "э-э-э".
+    Minimum length of word: 1 ("в").
+    Maximum length of word: 16 ("сфотографировать").
+    Average length of word: "5.739".
+Statistics by number
+    Number of numbers: 4 (4 various).
+    Minimum number: 1.
+    Maximum number: 4.
+    Average number: 2.5.
+Statistics by amounts
+    Number of amounts: 10 (10 various).
+    Minimum amount: 100.
+    Maximum amount: 1,000.
+    Average amount: 550.
+Statistics by date
+    Number of date: 4 (4 various).
+    Minimum date: Feb 1, 2003.
+    Maximum date: Feb 1, 2007.
+    Average date: Jan 31, 2005.
