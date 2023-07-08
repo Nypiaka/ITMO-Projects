@@ -1,0 +1,32 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+s _ -> ac _ ^
+s ( -> delimiter ( <
+s ) -> delimiter ) <
+delimiter _ -> start x >
+start ( -> backer_plus t <
+backer_plus t -> backer_plus t <
+start ) -> backer_minus t <
+backer_minus t -> backer_minus t <
+backer_minus x -> edge_backer_minus x <
+backer_plus x -> edge_backer_plus x <
+edge_backer_plus _ -> runner 1 >
+edge_backer_plus 0 -> runner 1 >
+edge_backer_plus 1 -> edge_backer_plus 0 <
+edge_backer_minus _ -> rj _ ^
+edge_backer_minus 0 -> edge_backer_minus 1 <
+edge_backer_minus 1 -> runner 0 >
+runner 0 -> runner 0 >
+runner 1 -> runner 1 >
+runner x -> runner x >
+runner t -> runner t >
+runner ( -> start ( ^
+runner ) -> start ) ^
+runner _ -> back_checker _ <
+back_checker t -> back_checker t <
+back_checker x -> zero_checker x <
+zero_checker 0 -> zero_checker 0 <
+zero_checker _ -> ac _ ^
+zero_checker 1 -> rj 1 ^

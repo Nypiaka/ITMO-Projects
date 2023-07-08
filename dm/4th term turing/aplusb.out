@@ -1,0 +1,67 @@
+start: start
+accept: ac
+reject: rj
+blank: _
+start 1 -> delim_printer 1 <
+start 0 -> delim_printer 0 <
+delim_printer _ -> first_taker x >
+first_taker x -> first_taker x >
+first_taker 0 -> first_taker 0 >
+first_taker 1 -> first_taker 1 >
+first_taker + -> first_raspred + <
+first_taker t -> first_raspred t <
+first_raspred 1 -> first_bringer_one t <
+first_raspred 0 -> first_bringer_zero t <
+first_raspred x -> second_taker x >
+second_taker t -> second_taker t >
+second_taker + -> second_taker + >
+second_taker 1 -> second_taker 1 >
+second_taker 0 -> second_taker 0 >
+second_taker z -> second_taker z >
+second_taker o -> second_taker o >
+second_taker x -> second_taker x >
+second_taker _ -> second_raspred _ <
+second_raspred 1 -> second_bringer_one _ <
+second_raspred 0 -> second_bringer_zero _ <
+second_raspred + -> cleaner _ <
+cleaner t -> cleaner _ <
+cleaner x -> cleaner _ <
+cleaner o -> cleaner 1 <
+cleaner z -> cleaner 0 <
+cleaner 1 -> cleaner 1 <
+cleaner 0 -> cleaner 0 <
+cleaner _ -> accepter _ >
+accepter 1 -> ac 1 ^
+accepter 0 -> ac 0 ^
+second_bringer_zero 0 -> second_bringer_zero 0 <
+second_bringer_zero 1 -> second_bringer_zero 1 <
+second_bringer_zero + -> second_bringer_zero + <
+second_bringer_zero t -> second_bringer_zero t <
+second_bringer_one 0 -> second_bringer_one 0 <
+second_bringer_one 1 -> second_bringer_one 1 <
+second_bringer_one + -> second_bringer_one + <
+second_bringer_one t -> second_bringer_one t <
+second_bringer_zero x -> second_bringer_zero_fin x <
+second_bringer_one x -> second_bringer_one_fin x <
+second_bringer_one_fin o -> second_bringer_one_fin o <
+second_bringer_one_fin z -> second_bringer_one_fin z <
+second_bringer_one_fin _ -> second_taker o >
+second_bringer_zero_fin _ -> second_taker z >
+second_bringer_zero_fin o -> second_bringer_zero_fin o <
+second_bringer_zero_fin z -> second_bringer_zero_fin z <
+second_bringer_one_fin 0 -> second_taker o >
+second_bringer_zero_fin 0 -> second_taker z >
+second_bringer_zero_fin 1 -> second_taker o >
+second_bringer_one_fin 1 -> one_adder z <
+one_adder 0 -> second_taker 1 >
+one_adder 1 -> one_adder 0 <
+one_adder _ -> second_taker 1 >
+first_bringer_one 1 -> first_bringer_one 1 <
+first_bringer_one 0 -> first_bringer_one 0 <
+first_bringer_one x -> first_bringer_one x <
+first_bringer_one _ -> first_taker 1 >
+first_bringer_zero 1 -> first_bringer_zero 1 <
+first_bringer_zero 0 -> first_bringer_zero 0 <
+first_bringer_zero x -> first_bringer_zero x <
+first_bringer_zero _ -> first_taker 0 >
+ 

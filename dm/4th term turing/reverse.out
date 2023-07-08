@@ -1,0 +1,31 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+s 0 -> delim 0 <
+s 1 -> delim 1 <
+delim _ -> start x >
+start 1 -> back_one z <
+start 0 -> back_zero z <
+start z -> start z >
+back_one z -> back_one z <
+back_zero z -> back_zero z <
+back_one x -> start_one x <
+start_one 1 -> start_one 1 <
+start_one 0 -> start_one 0 <
+start_one _ -> run_back 1 >
+back_zero x -> start_zero x <
+start_zero 1 -> start_zero 1 <
+start_zero 0 -> start_zero 0 <
+start_zero _ -> run_back 0 >
+run_back 1 -> run_back 1 >
+run_back 0 -> run_back 0 >
+run_back x -> start x >
+start _ -> back_and_clean _ <
+back_and_clean z -> back_and_clean _ <
+back_and_clean x -> back_and_clean _ <
+back_and_clean 1 -> back_and_clean 1 <
+back_and_clean 0 -> back_and_clean 0 <
+back_and_clean _ -> accept _ >
+accept 1 -> ac 1 ^
+accept 0 -> ac 0 ^

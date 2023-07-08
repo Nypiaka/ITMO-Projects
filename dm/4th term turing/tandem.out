@@ -1,0 +1,42 @@
+start: start
+accept: ac
+reject: rj
+blank: _
+start 1 -> runner o >
+start 0 -> runner z >
+runner 1 -> runner 1 >
+runner 0 -> runner 0 >
+runner _ -> translator _ <
+runner o -> translator o <
+runner z -> translator z <
+translator z -> rj z ^
+translator o -> rj o ^
+translator 1 -> back_runner o <
+translator 0 -> back_runner z <
+back_runner 0 -> back_runner 0 <
+back_runner 1 -> back_runner 1 <
+back_runner z -> start z >
+back_runner o -> start o >
+start o -> check_starter o <
+check_starter o -> check_back_one t >
+start z -> check_starter z <
+check_starter z -> check_back_zero t >
+check_back_one o -> check_back_one o >
+check_back_one z -> check_back_one z >
+check_back_one _ -> check_final_one _ <
+check_final_one z -> rj 0 ^
+check_final_one o -> run_check_back _ <
+check_back_zero o -> check_back_zero o >
+check_back_zero z -> check_back_zero z >
+check_back_zero _ -> check_final_zero _ <
+check_final_zero o -> rj 1 ^
+check_final_zero z -> run_check_back _ <
+run_check_back o -> run_check_back o <
+run_check_back z -> run_check_back z <
+run_check_back t -> start_final_check t <
+start_final_check t -> start_final_check t <
+start_final_check o -> check_back_one t >
+start_final_check z -> check_back_zero t >
+check_back_one t -> check_back_one t >
+check_back_zero t -> check_back_zero t >
+start_final_check _ -> ac _ ^

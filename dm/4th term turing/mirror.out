@@ -1,0 +1,24 @@
+start: runner
+accept: ac
+reject: rj
+blank: _
+runner 1 -> runner 1 >
+runner 0 -> runner 0 >
+runner _ -> raspred _ <
+raspred o -> raspred o <
+raspred z -> raspred z <
+raspred 1 -> one_bringer o >
+raspred 0 -> zero_bringer z >
+one_bringer o -> one_bringer o >
+one_bringer z -> one_bringer z >
+one_bringer _ -> raspred o <
+zero_bringer o -> zero_bringer o >
+zero_bringer z -> zero_bringer z >
+zero_bringer _ -> raspred z <
+raspred _ -> translator _ >
+translator o -> translator 1 >
+translator z -> translator 0 >
+translator _ -> accepter _ <
+accepter 1 -> accepter 1 <
+accepter 0 -> accepter 0 <
+accepter _ -> ac _ >

@@ -1,0 +1,54 @@
+start: st
+accept: ac
+reject: rj
+blank: _
+st 2 -> s 2 ^
+st 1 -> s 1 ^
+st 0 -> ac 0 ^
+s 2 -> s 2 >
+s 1 -> s 1 >
+s 0 -> s 0 >
+s _ -> subtracter x <
+subtracter 2 -> bringer 1 >
+subtracter 1 -> bringer 0 >
+subtracter 0 -> subtracter 2 <
+subtracter _ -> cleaner _ >
+bringer 0 -> bringer 0 >
+bringer 1 -> bringer 1 >
+bringer 2 -> bringer 2 >
+bringer x -> adder x >
+adder 0 -> backer 1 <
+adder 1 -> adder 0 >
+adder _ -> backer 1 <
+backer 0 -> backer 0 <
+backer 1 -> backer 1 <
+backer x -> subtracter x <
+cleaner 2 -> cleaner _ >
+cleaner x -> reverser _ >
+reverser 0 -> delim 0 <
+reverser 1 -> delim 1 <
+delim _ -> start x >
+start 1 -> back_one z <
+start 0 -> back_zero z <
+start z -> start z >
+back_one z -> back_one z <
+back_zero z -> back_zero z <
+back_one x -> start_one x <
+start_one 1 -> start_one 1 <
+start_one 0 -> start_one 0 <
+start_one _ -> run_back 1 >
+back_zero x -> start_zero x <
+start_zero 1 -> start_zero 1 <
+start_zero 0 -> start_zero 0 <
+start_zero _ -> run_back 0 >
+run_back 1 -> run_back 1 >
+run_back 0 -> run_back 0 >
+run_back x -> start x >
+start _ -> back_and_clean _ <
+back_and_clean z -> back_and_clean _ <
+back_and_clean x -> back_and_clean _ <
+back_and_clean 1 -> back_and_clean 1 <
+back_and_clean 0 -> back_and_clean 0 <
+back_and_clean _ -> accept _ >
+accept 1 -> ac 1 ^
+accept 0 -> ac 0 ^
