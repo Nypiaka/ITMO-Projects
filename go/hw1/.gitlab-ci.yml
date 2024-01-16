@@ -1,0 +1,22 @@
+image: golang:latest
+
+stages:
+  - check
+  - test
+  - build
+
+syntaxcheck:
+  stage: check
+  script:
+    - go fmt
+    - go vet
+
+compile:
+  stage: build
+  script:
+    - go build
+
+testing:
+  stage: test
+  script:
+    - go test
